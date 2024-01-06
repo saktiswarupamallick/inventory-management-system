@@ -1,0 +1,116 @@
+/* detail.css */
+
+/* Body and background styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+}
+
+/* Overall container styles */
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f7f7f7;
+}
+
+.details {
+  display: flex;
+  background-color: #fff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 20px;
+  overflow: hidden;
+}
+
+/* Left column (product image and additional details) */
+.big-img {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.big-img img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.product-additional-details {
+  font-size: 16px;
+  color: #333;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-bottom-left-radius: 10px;
+}
+
+.product-additional-details p {
+  margin: 10px 0;
+}
+
+/* Right column (product information) */
+.box {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  border-bottom-right-radius: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.product-price {
+  font-size: 20px;
+  color: #333;
+}
+
+.in-stock {
+  color: green;
+}
+
+.out-of-stock {
+  color: red;
+}
+
+.product-availability {
+  font-size: 18px;
+  color: #333;
+  margin-top: 15px;
+}
+
+.product-description {
+  font-size: 16px;
+  color: #333;
+  margin-top: 30px;
+}
+
+.product-description p {
+  margin: 15px 0;
+}
+
+/* Code and date sections */
+code {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Additional styling for specific elements */
+.product-name {
+  font-weight: bold;
+  font-size: 32px;
+}

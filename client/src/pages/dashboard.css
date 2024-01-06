@@ -1,0 +1,117 @@
+/* Add custom CSS for the dashboard layout */
+.dashboard-container {
+    display: flex;
+  }
+  
+  .left-section,
+  .right-section {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .left-section {
+    border-right: 1px solid #ccc;
+  }
+  
+  .right-section {
+    border-left: 1px solid #ccc;
+  }
+  
+  /* For responsiveness on smaller devices */
+  @media (max-width: 768px) {
+    .dashboard-container {
+      flex-direction: column;
+    }
+    
+    .left-section,
+    .right-section {
+      border: none;
+      margin-bottom: 20px;
+    }
+  }
+  .history-con h2{
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+  .salary-title{
+    font-size: 1.2rem;
+    span{
+        font-size: 1.8rem;
+    }
+}
+  .salary-item{
+    background: #FCF6F9;
+    border: 3px solid black;
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
+    padding: 1rem;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p{
+        font-weight: 600;
+        font-size: 1.6rem;
+    }
+}
+  
+  /* Styles for the boxes */
+  .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .box {
+    width: calc(33.33% - 20px); /* Adjust width as per your preference */
+    padding: 10px;
+    background-color:white;
+    border: 2px solid black;
+    margin-bottom: 20px;
+  }
+  
+  /* Add additional styling as needed for the box content (headings, subheadings, etc.) */
+  .box h3 {
+    font-size: 1.7rem;
+  }
+  
+  .box h4 {
+    font-size: 14px;
+  }
+  
+  .box p {
+    font-size: 21px;
+    font-weight:bold;
+  }
+  
+  /* Responsive styles for boxes */
+  @media (max-width: 768px) {
+    .box {
+      width: calc(50% - 20px);
+    }
+    
+    /* For even smaller devices, single column layout */
+    @media (max-width: 480px) {
+      .box {
+        width: 100%;
+      }
+    }
+  }
+  
+/* Chart.css */
+
+.chart-container {
+  width: 100%; /* Set the initial width to 100% */
+  max-width: 800px; /* Set a maximum width to prevent the chart from becoming too wide on large screens */
+  margin: 0 auto; /* Center the chart container */
+}
+
+/* Add responsive styles using media queries */
+@media screen and (max-width: 768px) {
+  .chart-container {
+    max-width: 90%; /* Reduce the maximum width on smaller screens */
+  }
+}
+
+  

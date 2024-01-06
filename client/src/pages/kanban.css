@@ -1,0 +1,49 @@
+
+
+.kanban-board {
+  padding-top: 80px;
+  max-width:9800px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.category {
+  width: 500px;
+ 
+  background-color: #ffffff;
+  color:black;
+  padding-top: 10px;
+ 
+}
+.category h2{
+  font-weight: bold;
+  margin-bottom:30px;
+}
+
+.task {
+  background-color: #ffffff;
+  padding: 10px 0 10px 0;
+  box-shadow: #710193 4px 3px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  cursor: move;
+   border:3px solid black;
+   width:450px;
+}
+
+.add-task {
+  margin-top: 20px;
+}
+
+.add-taskinput {
+  width: 200px;
+  padding: 10px;
+  border:2px solid black;
+  margin-right: 10px;
+}
+
+.add-task button {
+  padding: 5px 10px;
+}
